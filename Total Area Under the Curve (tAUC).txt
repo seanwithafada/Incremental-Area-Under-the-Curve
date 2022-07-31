@@ -1,0 +1,8 @@
+t<-c(0,15,30,45,60,75,90,105,120)
+v<-c(15,20,30,40,15,10,5,15,25)
+
+(AUC<-data.frame(t,v))
+
+library(caTools)
+(tAUC<-trapz(AUC$t, AUC$v))
+
